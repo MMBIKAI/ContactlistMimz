@@ -3,6 +3,10 @@ body {
     font-family: Arial, sans-serif;
     overflow: hidden; /* Hide any overflow */
     background-color: #a4ad47; /* Background color */
+    height: 100vh; /* Make the body take full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .starfield {
@@ -17,9 +21,6 @@ body {
 
 .container {
     text-align: center;
-    padding: 50px;
-    position: relative;
-    z-index: 1;
     color: #313517; /* Text color */
 }
 
@@ -33,15 +34,23 @@ h1 {
     margin-bottom: 30px;
 }
 
+.contact-links {
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    align-items: center; /* Center the buttons */
+    gap: 15px; /* Space between buttons */
+}
+
 .contact-links a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
+    display: block;
+    width: 200px; /* Set a fixed width for the buttons */
+    padding: 10px 0;
     background-color: #313517;
     color: #a4ad47;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .contact-links a:hover {
